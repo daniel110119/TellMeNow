@@ -1,0 +1,62 @@
+[ 2016-07-06T23:59:20+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0950s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\TellMeNow\TellMe\Home\Logic\AskLogic.class.php 第 30 行.
+SQL: SELECT * FROM `t_ask` ORDER BY (If(editTime>answerTime,editTime,answerTime)) desc LIMIT 1,1   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='4' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0500s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='4' [ RunTime:0.0180s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 4 group by ta.publishTime desc limit 1 [ RunTime:0.0150s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType [ RunTime:0.0420s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 74 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-06T23:59:24+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\TellMeNow\TellMe\Home\Logic\AskLogic.class.php 第 30 行.
+SQL: SELECT * FROM `t_ask` ORDER BY (If(editTime>answerTime,editTime,answerTime)) desc LIMIT 2,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='2' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='2' [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 2 group by ta.publishTime desc limit 1 [ RunTime:0.0020s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=2 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 74 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+

@@ -1,0 +1,108 @@
+[ 2016-06-11T13:19:50+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'desc and If(answerTime>editTime,1,0)) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(editTime>publishTime,1,0) desc and If(answerTime>editTime,1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:20:00+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'desc and If(answerTime>editTime,1,0)) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(editTime>publishTime,1,0) desc and If(answerTime>editTime,1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:20:21+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'If(answerTime>editTime,1,0)) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(editTime>publishTime,1,0) If(answerTime>editTime,1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:23:30+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY If(answerTime>editTime,1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:23:33+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY If(answerTime>editTime,1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:24:18+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (answerTime<editTime,1,0)+If(answerTime>editTime,1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:24:20+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (answerTime<editTime,1,0)+If(answerTime>editTime,1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:28:14+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') asc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(editTime>answerTime,1,0))) asc LIMIT 0,20  
+
+[ 2016-06-11T13:46:47+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de '),1,0)) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(edittime>answertime),1,0)) desc LIMIT 0,20  
+
+[ 2016-06-11T13:47:14+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de '),1,0) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(edittime>answertime),1,0) desc LIMIT 0,20  
+
+[ 2016-06-11T13:47:15+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de '),1,0) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(edittime>answertime),1,0) desc LIMIT 0,20  
+
+[ 2016-06-11T13:47:16+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de '),1,0) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY (If(edittime>answertime),1,0) desc LIMIT 0,20  
+
+[ 2016-06-11T18:05:27+08:00 ] ::1 /TellMeNow/index.php/home/test/Ask
+ERR: 1054:Champ 'ub' inconnu dans on clause
+ [ SQL语句 ] : select tb.url from t_user_badge as ub join t_badge as tb on(ub,bid=tb.id) where ub.uid=4
+
+[ 2016-06-11T18:17:34+08:00 ] ::1 /TellMeNow/index.php/home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(' à la ligne 1
+ [ SQL语句 ] : select tb.url,,count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType
+
+[ 2016-06-11T18:17:37+08:00 ] ::1 /TellMeNow/index.php/home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(' à la ligne 1
+ [ SQL语句 ] : select tb.url,,count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType
+
+[ 2016-06-11T18:18:08+08:00 ] ::1 /TellMeNow/index.php/home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(' à la ligne 1
+ [ SQL语句 ] : select tb.url,,count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType
+
+[ 2016-06-11T18:18:09+08:00 ] ::1 /TellMeNow/index.php/home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(' à la ligne 1
+ [ SQL语句 ] : select tb.url,,count(tb.badgeType) as badgeType  from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType
+
+[ 2016-06-11T18:38:53+08:00 ] ::1 /TellMeNow/index.php/home/test/Askupdate
+ERR: 1054:Champ '$aid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( id=$aid ) 
+
+[ 2016-06-11T18:38:54+08:00 ] ::1 /TellMeNow/index.php/home/test/Askupdate
+ERR: 1054:Champ '$aid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( id=$aid ) 
+
+[ 2016-06-11T18:39:06+08:00 ] ::1 /TellMeNow/index.php/home/test/Askupdate
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( id= ) 
+
+[ 2016-06-11T18:39:07+08:00 ] ::1 /TellMeNow/index.php/home/test/Askupdate
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( id= ) 
+
+[ 2016-06-11T18:39:07+08:00 ] ::1 /TellMeNow/index.php/home/test/Askupdate
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( id= ) 
+
+[ 2016-06-11T19:25:42+08:00 ] ::1 /TellMeNow/index.php/home/test/Ask?sort=5,asc
+ERR: 1305:FUNCTION tellme.publish does not exist
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY publish(If(editTime>answerTime,editTime,answerTime)) asc LIMIT 0,20  
+
+[ 2016-06-11T19:28:19+08:00 ] ::1 /TellMeNow/index.php/home/test/ask?sort=7,asc
+ERR: 1305:FUNCTION tellme.edit does not exist
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY edit(If(editTime>answerTime,editTime,answerTime)) asc LIMIT 0,20  
+
+[ 2016-06-11T19:28:33+08:00 ] ::1 /TellMeNow/index.php/home/test/ask?sort=7,asc
+ERR: 1305:FUNCTION tellme.edit does not exist
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY edit(If(editTime>answerTime,editTime,answerTime)) asc LIMIT 0,20  
+
+[ 2016-06-11T19:30:07+08:00 ] ::1 /TellMeNow/index.php/home/test/ask?sort=7,asc
+ERR: 1305:FUNCTION tellme.edit does not exist
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY edit(If(editTime>answerTime,editTime,answerTime)) asc LIMIT 0,20  
+
+[ 2016-06-11T19:30:40+08:00 ] ::1 /TellMeNow/index.php/home/test/ask?sort=6,asc
+ERR: 1305:FUNCTION tellme.answer does not exist
+ [ SQL语句 ] : SELECT * FROM `t_ask` ORDER BY answer(If(editTime>answerTime,editTime,answerTime)) asc LIMIT 0,20  
+

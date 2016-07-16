@@ -1,0 +1,80 @@
+[ 2016-06-10T20:03:39+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:06:55+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:07:41+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:07:42+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:07:43+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:16+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:17+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:17+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:18+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:18+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:18+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:18+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:19+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:10:19+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:13:25+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:13:27+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:13:28+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:13:43+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:13:43+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+
+[ 2016-06-10T20:13:43+08:00 ] ::1 /TellMeNow/index.php/home/test/ask
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  publishtime ) AND (  ) LIMIT 0,20  
+

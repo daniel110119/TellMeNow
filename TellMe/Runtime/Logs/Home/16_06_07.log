@@ -1,0 +1,176 @@
+[ 2016-06-07T11:23:59+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: Think\Model:aAllAsk方法不存在！
+
+[ 2016-06-07T11:24:14+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: Think\Model:aAllAsk方法不存在！
+
+[ 2016-06-07T11:35:38+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsname from t_rights where score < (select score from t_user where id = )
+
+[ 2016-06-07T11:35:38+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsname from t_rights where score < (select score from t_user where id = )
+
+[ 2016-06-07T11:35:38+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsname from t_rights where score < (select score from t_user where id = )
+
+[ 2016-06-07T11:35:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsname from t_rights where score < (select score from t_user where id = )
+
+[ 2016-06-07T11:35:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsname from t_rights where score < (select score from t_user where id = )
+
+[ 2016-06-07T11:35:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsname from t_rights where score < (select score from t_user where id = )
+
+[ 2016-06-07T13:07:30+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsName from t_rights where grade < (select reputation from t_user where id = )
+
+[ 2016-06-07T13:07:45+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsName from t_rights where grade < (select reputation from t_user where id = )
+
+[ 2016-06-07T13:08:47+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index
+ERR: 1054:Champ 'reputation' inconnu dans field list
+ [ SQL语句 ] : select rightsName from t_rights where grade < (select reputation from t_user where id = 1)
+
+[ 2016-06-07T15:06:55+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/caii
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsName from t_rights where grade <= (select reputation from  t_userInfo where id = )
+
+[ 2016-06-07T15:11:05+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsName from t_rights where grade <= (select reputation from  t_userInfo where id = )
+
+[ 2016-06-07T15:11:06+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsName from t_rights where grade <= (select reputation from  t_userInfo where id = )
+
+[ 2016-06-07T15:11:06+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : select rightsName from t_rights where grade <= (select reputation from  t_userInfo where id = )
+
+[ 2016-06-07T15:20:53+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/cai
+ERR: Think\Controller:getError方法不存在！
+
+[ 2016-06-07T15:20:53+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/cai
+ERR: Think\Controller:getError方法不存在！
+
+[ 2016-06-07T15:20:54+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/cai
+ERR: Think\Controller:getError方法不存在！
+
+[ 2016-06-07T15:20:54+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/cai
+ERR: Think\Controller:getError方法不存在！
+
+[ 2016-06-07T15:20:54+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/index/cai
+ERR: Think\Controller:getError方法不存在！
+
+[ 2016-06-07T15:45:43+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/askedit
+ERR: 非法操作:askedit
+
+[ 2016-06-07T15:48:51+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1054:Champ 'ask' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_askredit` WHERE ( ask,uid=2 ) 
+
+[ 2016-06-07T16:44:34+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1146:La table 'tellme.t_answernote_userinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.* FROM t_answernote_userinfo AS a, t_userinfo AS b WHERE a.userinfo_id = b.id AND a. uid='1'
+
+[ 2016-06-07T16:44:45+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1146:La table 'tellme.t_answernote_userinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.* FROM t_answernote_userinfo AS a, t_userinfo AS b WHERE a.userinfo_id = b.id AND a. uid='1'
+
+[ 2016-06-07T16:45:01+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1054:Champ 'uid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_userinfo` WHERE ( 1=1 AND uid='1' ) 
+
+[ 2016-06-07T16:45:02+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1054:Champ 'uid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_userinfo` WHERE ( 1=1 AND uid='1' ) 
+
+[ 2016-06-07T16:45:02+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1054:Champ 'uid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_userinfo` WHERE ( 1=1 AND uid='1' ) 
+
+[ 2016-06-07T16:45:03+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1054:Champ 'uid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_userinfo` WHERE ( 1=1 AND uid='1' ) 
+
+[ 2016-06-07T16:45:03+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1054:Champ 'uid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_userinfo` WHERE ( 1=1 AND uid='1' ) 
+
+[ 2016-06-07T16:45:32+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1054:Champ 'uid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_userinfo` WHERE ( 1=1 AND uid='1' ) LIMIT 1  
+
+[ 2016-06-07T16:45:33+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answernote
+ERR: 1054:Champ 'uid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_userinfo` WHERE ( 1=1 AND uid='1' ) LIMIT 1  
+
+[ 2016-06-07T17:03:35+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,3  
+
+[ 2016-06-07T17:04:33+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,3  
+
+[ 2016-06-07T17:04:41+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,3  
+
+[ 2016-06-07T17:05:12+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,3  
+
+[ 2016-06-07T17:05:13+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,3  
+
+[ 2016-06-07T17:05:13+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,3  
+
+[ 2016-06-07T17:05:20+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:05:21+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:05:21+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:05:21+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:05:21+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:05:22+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:05:22+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:06:30+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+
+[ 2016-06-07T17:06:30+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1054:Champ 'zhan' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( zhan>50 ) LIMIT 0,20  
+

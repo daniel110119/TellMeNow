@@ -1,0 +1,137 @@
+[ 2016-06-12T09:20:58+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Askupdate
+ERR: 1054:Champ 'sad' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(1,sad)
+
+[ 2016-06-12T09:23:58+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:27:12+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:27:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:27:45+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:27:45+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:27:45+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:27:45+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:28:11+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask?sort=2,asc
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:28:13+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask?sort=2,asc
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:29:29+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask?sort=2,asc
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:30:52+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask?sort=2,asc
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:30:53+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask?sort=2,asc
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T09:31:13+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask?sort=2,asc
+ERR: 1064:Erreur de syntaxe près de 'group by tb.badgeType' à la ligne 1
+ [ SQL语句 ] : select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid= group by tb.badgeType
+
+[ 2016-06-12T10:09:31+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Asknote
+ERR: 1064:Erreur de syntaxe près de ') ORDER BY publishtime desc' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_asknote` WHERE ( aid= ) ORDER BY publishtime desc 
+
+[ 2016-06-12T10:09:33+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Asknote
+ERR: 1064:Erreur de syntaxe près de ') ORDER BY publishtime desc' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_asknote` WHERE ( aid= ) ORDER BY publishtime desc 
+
+[ 2016-06-12T10:10:13+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Asknote
+ERR: 1064:Erreur de syntaxe près de ') ORDER BY publishtime desc' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_asknote` WHERE ( aid= ) ORDER BY publishtime desc 
+
+[ 2016-06-12T10:10:14+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Asknote
+ERR: 1064:Erreur de syntaxe près de ') ORDER BY publishtime desc' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_asknote` WHERE ( aid= ) ORDER BY publishtime desc 
+
+[ 2016-06-12T10:29:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1064:Erreur de syntaxe près de 'where uid=1' à la ligne 1
+ [ SQL语句 ] : select id t_ask where uid=1
+
+[ 2016-06-12T10:29:46+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1064:Erreur de syntaxe près de 'where uid=1' à la ligne 1
+ [ SQL语句 ] : select id t_ask where uid=1
+
+[ 2016-06-12T15:17:09+08:00 ] 127.0.0.1 /TellMeNow/index.php/home/text/addreadit
+ERR: 无法加载控制器:Text
+
+[ 2016-06-12T15:17:16+08:00 ] 127.0.0.1 /TellMeNow/index.php/home/text/addreadit
+ERR: 无法加载控制器:Text
+
+[ 2016-06-12T15:17:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/tesxt/askreadit
+ERR: 无法加载控制器:Tesxt
+
+[ 2016-06-12T15:17:47+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/askreadit
+ERR: 非法操作:askreadit
+
+[ 2016-06-12T15:17:48+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/askreadit
+ERR: 非法操作:askreadit
+
+[ 2016-06-12T15:23:43+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1054:Champ 'nickname' inconnu dans field list
+ [ SQL语句 ] : SELECT `edittime`,`aftercontent`,`isaccept`,`nickname`,`website`,`url`,`reputation` FROM `t_askredit` WHERE ( aid=3 ) 
+
+[ 2016-06-12T15:23:44+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1054:Champ 'nickname' inconnu dans field list
+ [ SQL语句 ] : SELECT `edittime`,`aftercontent`,`isaccept`,`nickname`,`website`,`url`,`reputation` FROM `t_askredit` WHERE ( aid=3 ) 
+
+[ 2016-06-12T15:23:44+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1054:Champ 'nickname' inconnu dans field list
+ [ SQL语句 ] : SELECT `edittime`,`aftercontent`,`isaccept`,`nickname`,`website`,`url`,`reputation` FROM `t_askredit` WHERE ( aid=3 ) 
+
+[ 2016-06-12T15:26:14+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1064:Erreur de syntaxe près de '11:22:00 )' à la ligne 1
+ [ SQL语句 ] : SELECT `edittime`,`aftercontent`,`isaccept`,`uid` FROM `t_askredit` WHERE ( aid=2016-06-07 11:22:00 ) 
+
+[ 2016-06-12T16:23:23+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: Think\Model:edittimeDate方法不存在！
+
+[ 2016-06-12T16:23:27+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: Think\Model:edittimeDate方法不存在！
+
+[ 2016-06-12T16:31:07+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1064:Erreur de syntaxe près de 'WHERE ( id=1 )' à la ligne 1
+ [ SQL语句 ] : UPDATE `t_askredit` SET  WHERE ( id=1 )
+
+[ 2016-06-12T16:35:58+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `aid`,`edittime` FROM `t_askredit` WHERE ( id= ) 
+
+[ 2016-06-12T16:45:28+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1064:Erreur de syntaxe près de 'where id=2' à la ligne 1
+ [ SQL语句 ] : insert into t_ask(content,editTime) values('what can js do?','2016-06-07 19:22:00') where id=2
+
+[ 2016-06-12T16:50:47+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AskRedit
+ERR: 1064:Erreur de syntaxe près de 'where id=2' à la ligne 1
+ [ SQL语句 ] : insert into t_ask(content,editTime) values('what can js do?','2016-06-07 19:22:00') where id=2
+
+[ 2016-06-12T16:54:29+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Ask
+ERR: 1064:Erreur de syntaxe près de ') ORDER BY (If(editTime>answerTime,editTime,answerTime)) desc LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE (  answertime ) AND (  ) ORDER BY (If(editTime>answerTime,editTime,answerTime)) desc LIMIT 0,20  
+

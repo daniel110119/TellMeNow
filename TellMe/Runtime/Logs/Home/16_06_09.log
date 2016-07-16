@@ -1,0 +1,46 @@
+[ 2016-06-09T00:24:24+08:00 ] ::1 /TellMeNow/index.php/home/test/addask
+ERR: 1054:Champ 'tagids' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagids) values(8,1)
+
+[ 2016-06-09T00:24:50+08:00 ] ::1 /TellMeNow/index.php/home/test/addask
+ERR: 1054:Champ 'tagids' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagids) values(9,1)
+
+[ 2016-06-09T00:27:28+08:00 ] ::1 /TellMeNow/index.php/home/test/addask
+ERR: 1054:Champ 's' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(11,s)
+
+[ 2016-06-09T00:30:11+08:00 ] ::1 /TellMeNow/index.php/home/test/addask
+ERR: 1054:Champ 'ss' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(12,ss)
+
+[ 2016-06-09T00:30:53+08:00 ] ::1 /TellMeNow/index.php/home/test/addask
+ERR: 1054:Champ 'ss' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(13,ss)
+
+[ 2016-06-09T00:31:07+08:00 ] ::1 /TellMeNow/index.php/home/test/addask
+ERR: 1054:Champ 'ss' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(14,ss)
+
+[ 2016-06-09T00:36:59+08:00 ] ::1 /TellMeNow/index.php/home/test/addask
+ERR: Think\Model:AddAsk方法不存在！
+
+[ 2016-06-09T00:37:28+08:00 ] ::1 /TellMeNow/index.php/home/test/AddAsk
+ERR: Think\Model:AddAsk方法不存在！
+
+[ 2016-06-09T01:19:06+08:00 ] ::1 /TellMeNow/index.php/home/test/AskUpdate
+ERR: 1064:Erreur de syntaxe près de 't_ask_tag where 'askid' = 5' à la ligne 1
+ [ SQL语句 ] : delete form t_ask_tag where 'askid' = 5
+
+[ 2016-06-09T01:45:49+08:00 ] ::1 /TellMeNow/index.php/home/test/AskUpdate
+ERR: 1054:Champ 'Tagid' inconnu dans field list
+ [ SQL语句 ] : UPDATE `t_ask` SET `title`='PhP',`content`='ohP',`Tagid`='5' WHERE ( id=5 )
+
+[ 2016-06-09T17:48:28+08:00 ] ::1 /TellMeNow/index.php/home/test/AddUpOrDown
+ERR: 1064:Erreur de syntaxe près de '17:48:28)' à la ligne 1
+ [ SQL语句 ] : insert into t_ask_opt(uid,askid,votetime) values(1,1,2016-06-09 17:48:28)
+
+[ 2016-06-09T17:49:19+08:00 ] ::1 /TellMeNow/index.php/home/test/AddUpOrDown
+ERR: 1062:Duplicata du champ '1-1' pour la clef 'PRIMARY'
+ [ SQL语句 ] : insert into t_ask_opt(uid,askid,votetime) values(1,1,'2016-06-09 17:49:19')
+

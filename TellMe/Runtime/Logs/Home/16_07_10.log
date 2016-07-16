@@ -1,0 +1,1372 @@
+[ 2016-07-10T12:15:45+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.1960s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` WHERE ( bounty is not null ) ORDER BY bounty desc LIMIT 0,4   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.1930s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='8' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.2010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='8' [ RunTime:0.0580s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='7' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1' [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 8 group by ta.publishTime desc limit 1 [ RunTime:0.0260s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.3330s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 7 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:15:45+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.1960s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` ORDER BY (If(editTime<answerTime,answerTime,editTime)) desc LIMIT 0,4   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.1930s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.2000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0580s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='8' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='8' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='7' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='6' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='6' [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 9 group by ta.publishTime desc limit 1 [ RunTime:0.0220s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.3330s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 8 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 7 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 6 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:15:50+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` ORDER BY zan-cai desc LIMIT 0,4   [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='3' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='3' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='2' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='2' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='4' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='4' [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 3 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=3 group by tb.badgeType [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 2 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=2 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 4 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:15:51+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T12:16:44+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:25:18+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:30:49+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T12:31:13+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:32:09+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T12:32:14+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:34:22+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:35:19+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:37:54+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:38:10+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AnswerZanCai
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Home\service\AnswerService::AnswerZanCai(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 67 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AnswerService.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Home\service\AnswerService::AnswerZanCai(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 67 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AnswerService.class.php 第 34 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AnswerService.class.php on line 35 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: select aid from t_answer where id=14 [ RunTime:0.0000s ]
+SQL: insert into t_ans_opt(uid,askid,answerid,votetime) values(1,9,14,'2016-07-10 12:38:10') [ RunTime:0.0800s ]
+SQL: UPDATE `t_answer` SET `zan`=zan+1 WHERE ( id=14 ) [ RunTime:0.0240s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\wamp\www\TellMeNow\TellMe\Home\Logic\AnswerLogic.class.php 第 56 行.
+
+[ 2016-07-10T12:43:16+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` ORDER BY (If(editTime<answerTime,answerTime,editTime)) desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='8' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='8' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='7' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='6' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='6' [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 9 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 8 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 7 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 6 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:43:17+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` ORDER BY zan-cai desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='3' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='3' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='2' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='2' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='4' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='4' [ RunTime:0.0020s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 3 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=3 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 2 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=2 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 4 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:43:17+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` WHERE ( bounty is not null ) ORDER BY bounty desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='8' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='8' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='7' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1' [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 8 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 7 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:45:36+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` ORDER BY zan-cai desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='3' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='3' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='2' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='2' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='4' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='4' [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 3 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=3 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 2 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=2 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 4 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:45:36+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` ORDER BY (If(editTime<answerTime,answerTime,editTime)) desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='8' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='8' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='7' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='6' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='6' [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 9 group by ta.publishTime desc limit 1 [ RunTime:0.0020s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 8 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 7 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 6 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:45:36+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_ask` WHERE ( bounty is not null ) ORDER BY bounty desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='8' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='8' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='7' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1' [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 8 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 7 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T12:46:40+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:48:24+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T12:48:32+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:49:07+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:50:25+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:50:43+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T12:51:20+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:51:58+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:52:33+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T12:53:09+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T13:14:13+08:00 ] ::1 /TellMeNow/index.php/Home/Test/AllAsk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [2] Missing argument 1 for Home\service\AskService::AllAsk(), called in D:\wamp\www\TellMeNow\TellMe\Home\Controller\TestController.class.php on line 35 and defined D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 45 and defined D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\TellMeNow\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: assign D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: mysort D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: limit D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` ORDER BY (If(editTime<answerTime,answerTime,editTime)) desc LIMIT 4,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='4' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='4' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='2' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='2' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( 1=1 AND aid='3' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='3' [ RunTime:0.0000s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limit 1 [ RunTime:0.0000s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=1 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 4 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=4 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 2 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=2 group by tb.badgeType [ RunTime:0.0010s ]
+SQL: select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 3 group by ta.publishTime desc limit 1 [ RunTime:0.0010s ]
+SQL: select tb.url,count(tb.badgeType) as BadgeType from t_user_badge as ub join t_badge as tb on(ub.bid=tb.id) where ub.uid=3 group by tb.badgeType [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for FE(), called in D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php on line 76 and defined D:\wamp\www\TellMeNow\TellMe\Common\Common\function.php 第 8 行.
+
+[ 2016-07-10T13:16:36+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T13:17:13+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T13:17:43+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T13:18:40+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T13:19:17+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-10T13:19:37+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T13:20:05+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-10T13:20:29+08:00 ] ::1 /TellMeNow/index.php/Home/Test/Askinfoshow
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 13 行.
+NOTIC: [8] Undefined variable: logic D:\wamp\www\TellMeNow\TellMe\Home\Service\AskService.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `t_answer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_answernote` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_ask` WHERE ( id=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_asknote` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_asknote` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_userinfo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\TellMeNow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.tagname FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answer` WHERE ( aid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 14  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 16  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 17  )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_answernote` WHERE ( answerid = 18  )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_userinfo` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+

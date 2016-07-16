@@ -1,0 +1,56 @@
+[ 2016-06-13T09:34:17+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AddUpOrDown
+ERR: 1062:Duplicata du champ '2-1' pour la clef 'PRIMARY'
+ [ SQL语句 ] : insert into t_ask_opt(uid,askid,votetime) values(2,1,'2016-06-13 09:34:17')
+
+[ 2016-06-13T09:34:23+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/AddUpOrDown
+ERR: 1062:Duplicata du champ '3-1' pour la clef 'PRIMARY'
+ [ SQL语句 ] : insert into t_ask_opt(uid,askid,votetime) values(3,1,'2016-06-13 09:34:23')
+
+[ 2016-06-13T10:33:16+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answer
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 0,20' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `t_answer` WHERE ( id= ) LIMIT 0,20  
+
+[ 2016-06-13T10:44:10+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answer
+ERR: 1054:Champ '$aid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( id=$aid ) 
+
+[ 2016-06-13T10:44:12+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/answer
+ERR: 1054:Champ '$aid' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `t_ask` WHERE ( id=$aid ) 
+
+[ 2016-06-13T14:54:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1062:Duplicata du champ '1-2' pour la clef 'PRIMARY'
+ [ SQL语句 ] : insert into t_ans_opt(uid,askid,votetime) values(1,2,'2016-06-13 14:54:39')
+
+[ 2016-06-13T14:54:42+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1062:Duplicata du champ '1-2' pour la clef 'PRIMARY'
+ [ SQL语句 ] : insert into t_ans_opt(uid,askid,votetime) values(1,2,'2016-06-13 14:54:42')
+
+[ 2016-06-13T14:54:59+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : UPDATE `t_answer` SET `zan`=zan+1 WHERE ( id= )
+
+[ 2016-06-13T14:56:17+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1064:Erreur de syntaxe près de '14:56:17)' à la ligne 1
+ [ SQL语句 ] : insert into t_ans_opt(uid,askid,votetime) values(11,2,2016-06-13 14:56:17)
+
+[ 2016-06-13T14:57:41+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1064:Erreur de syntaxe près de '14:57:41)' à la ligne 1
+ [ SQL语句 ] : insert into t_ans_opt(uid,askid,votetime) values(11,2,2016-06-13 14:57:41)
+
+[ 2016-06-13T14:57:43+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1064:Erreur de syntaxe près de '14:57:43)' à la ligne 1
+ [ SQL语句 ] : insert into t_ans_opt(uid,askid,votetime) values(11,2,2016-06-13 14:57:43)
+
+[ 2016-06-13T15:03:45+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1064:Erreur de syntaxe près de '['aid'],2,2016-06-13 15:03:45)' à la ligne 1
+ [ SQL语句 ] : insert into t_ans_opt(uid,askid,answerid,votetime) values(11,Array['aid'],2,2016-06-13 15:03:45)
+
+[ 2016-06-13T15:04:54+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1064:Erreur de syntaxe près de '15:04:54)' à la ligne 1
+ [ SQL语句 ] : insert into t_ans_opt(uid,askid,answerid,votetime) values(11,2,2,2016-06-13 15:04:54)
+
+[ 2016-06-13T15:05:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/Answer
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : UPDATE `t_answer` SET `zan`=zan+1 WHERE ( id= )
+

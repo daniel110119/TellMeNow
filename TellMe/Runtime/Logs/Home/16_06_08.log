@@ -1,0 +1,140 @@
+[ 2016-06-08T09:46:58+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de '] FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1'' à la ligne 1
+ [ SQL语句 ] : SELECT b.tagname] FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1'
+
+[ 2016-06-08T09:47:00+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de '] FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1'' à la ligne 1
+ [ SQL语句 ] : SELECT b.tagname] FROM t_ask_tag AS a, t_tag AS b WHERE a.tagid = b.id AND a. askid='1'
+
+[ 2016-06-08T10:38:29+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'group by ta.publishTime desc limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid =  group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:38:31+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'group by ta.publishTime desc limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid =  group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:39:10+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'group by ta.publishTime desc limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid =  group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:40:38+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:40:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:40:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:41:38+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:41:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:41:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limt 1
+
+[ 2016-06-08T10:41:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/ask
+ERR: 1064:Erreur de syntaxe près de 'limt 1' à la ligne 1
+ [ SQL语句 ] : select tu.nickname,ta.publishTime from t_answer as ta join t_userinfo as tu on(ta.uid=tu.id) where ta.aid = 1 group by ta.publishTime desc limt 1
+
+[ 2016-06-08T15:00:39+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 1054:Champ 'Conuent' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `t_ask` (`title`,`Conuent`) VALUES ('Css','CssCss')
+
+[ 2016-06-08T15:00:46+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 1054:Champ 'Conuent' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `t_ask` (`title`,`Conuent`) VALUES ('Css','CssCss')
+
+[ 2016-06-08T15:51:57+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 参数错误或者未定义:data
+
+[ 2016-06-08T15:52:42+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 1064:Erreur de syntaxe près de 'inset into t_ask_tag('askid','tagid') values(8,3)' à la ligne 1
+ [ SQL语句 ] : inset into t_ask_tag('askid','tagid') values(8,3)
+
+[ 2016-06-08T15:56:28+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 1064:Erreur de syntaxe près de 'inset into t_ask_tag(askid,tagid) values(9,3)' à la ligne 1
+ [ SQL语句 ] : inset into t_ask_tag(askid,tagid) values(9,3)
+
+[ 2016-06-08T15:56:55+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(10,3)
+
+[ 2016-06-08T15:57:29+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 1064:Erreur de syntaxe près de ''askid','tagid') values(11,3)' à la ligne 1
+ [ SQL语句 ] : insert into t_ask_tag('askid','tagid') values(11,3)
+
+[ 2016-06-08T15:58:50+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 1064:Erreur de syntaxe près de ''askid','tagid') values(12,3)' à la ligne 1
+ [ SQL语句 ] : insert into t_ask_tag('askid','tagid') values(12,3)
+
+[ 2016-06-08T15:59:38+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(13,3)
+
+[ 2016-06-08T16:01:03+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value(14,3)
+
+[ 2016-06-08T16:03:12+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value(15,3)
+
+[ 2016-06-08T16:04:14+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value(16,3)
+
+[ 2016-06-08T16:06:04+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: 1054:Champ 'Array' inconnu dans field list
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value(17,Array)
+
+[ 2016-06-08T16:07:49+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value(18,1)
+
+[ 2016-06-08T16:08:52+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value(19,1)
+
+[ 2016-06-08T16:11:49+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value('20','1')
+
+[ 2016-06-08T16:13:31+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value('13','1')
+
+[ 2016-06-08T16:13:41+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) value('13','1')
+
+[ 2016-06-08T16:15:33+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(13,1)
+
+[ 2016-06-08T16:15:43+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(13,1)
+
+[ 2016-06-08T16:18:19+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(23,1)
+
+[ 2016-06-08T16:19:09+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid) values(13,13)
+
+[ 2016-06-08T16:20:12+08:00 ] 127.0.0.1 /TellMeNow/index.php/Home/test/addask
+ERR: :
+ [ SQL语句 ] : insert into t_ask_tag(askid,tagid)
+     			values(13,13)
+
